@@ -1,1 +1,156 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yonge Bai</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <header class="bg-gray-800 text-gray-100 p-6">
+        <nav class="container mx-auto">
+            <ul class="flex justify-end space-x-8">
+                <li><a href="#" class="hover:text-yellow-400 transition duration-300">Home</a></li>
+                <li><a href="#about" class="hover:text-yellow-400 transition duration-300">About</a></li>
+                <li><a href="blog.html" class="hover:text-yellow-400 transition duration-300">Blog</a></li>
+                <li><a href="#experience" class="hover:text-yellow-400 transition duration-300">Experience</a></li>
+                <li><a href="#projects" class="hover:text-yellow-400 transition duration-300">Projects</a></li>
+                <li><a target="_blank" href="YongeBai_Resume.pdf" class="hover:text-yellow-400 transition duration-300">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto mt-16 px-4">
+        <section id="about" class="mb-24">
+            <h1 class="text-6xl font-bold mb-8 text-yellow-400">Yonge Bai</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+                <img src="images/face.JPEG" alt="Yonge Bai" class="w-full h-auto rounded-lg col-span-1">
+                <div class="col-span-2">
+                    <h2 class="text-3xl font-semibold mb-4">Software Engineering Student @ McMaster University</h2>
+                    <p class="text-xl mb-6">I like coding and capitalism.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://linkedin.com/in/yongebai" class="text-yellow-400 hover:text-yellow-300 transition duration-300">LinkedIn</a>
+                        <a href="https://github.com/yongebai" class="text-yellow-400 hover:text-yellow-300 transition duration-300">GitHub</a>
+                        <a href="mailto:baiy58@mcmaster.ca" class="text-yellow-400 hover:text-yellow-300 transition duration-300">Email</a>
+                        <a target="_blank" href="YongeBai_Resume.pdf" class="text-yellow-400 hover:text-yellow-300 transition duration-300">Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recent-posts" class="mb-24">
+            <h2 class="text-4xl font-bold mb-8">Recent Blog Posts</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Sushi Beauty vs Curry Beauty</h3>
+                    <p class="text-gray-300 mb-4">Beauty is objective </p>
+                    <a href="blog.html" class="text-yellow-400 hover:text-yellow-300 transition duration-300">Read More</a>
+                </div>
+            </div>
+        </section>
+        <section id="education" class="mb-24">
+            <h2 class="text-4xl font-bold mb-8">Education</h2>
+            <div class="bg-gray-800 p-8 rounded-lg">
+                <h3 class="text-2xl font-semibold mb-2">McMaster University</h3>
+                <p class="text-xl">Bachelor of Engineering, Software Engineering</p>
+                <p class="text-gray-400">GPA: 3.9/4.0 (11.3/12)</p>
+                <p class="text-gray-400">Graduation: Spring 2026</p>
+            </div>
+        </section>
+        
+        <section id="arxiv-preprints" class="mb-24">
+            <h2 class="text-4xl font-bold mb-8">ArXiv</h2>
+            <div class="bg-gray-800 p-8 rounded-lg">
+                <a href="https://arxiv.org/abs/2407.08137"><h3 class="text-2xl text-yellow-400 font-semibold mb-4">Survey on Fundamental Deep learning 3D Reconstruction Techniques</h3></a>
+                <p class="text-gray-300 mb-4">Comprehensive survey paper on fundamental and SOTA deep learning techniques for 3D
+                    reconstruction, including NeRFs, Latent Diffusion Models, and 3D Gaussian Splatting. Analyzed algorithms,
+                    strengths, limitations, and future trends in 3D model and scene reconstruction.</p>
+            </div>
+        </section>
+        <section id="experience" class="mb-24">
+            <h2 class="text-4xl font-bold mb-8">Experience</h2>
+            <div class="space-y-12">
+                <div class="bg-gray-800 p-8 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4">AI/ML Software Engineering Intern @ Ericsson</h3>
+                    <p class="text-gray-400 mb-4">May 2024 - Current</p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li>Built an anomaly detection web app with React, TypeScript, Node.js, and Python, integrating custom and HuggingFace ML models.</li>
+                        <li>Spearheaded user demos and translated feedback into development priorities.</li>
+                        <li>Refactored legacy code, reducing over 3000 lines of code.</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Machine Learning Intern @ Fellowship.AI</h3>
+                    <p class="text-gray-400 mb-4">Jan 2023 - Mar 2023</p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li>Led a team of 8 interns to reproduce ChatGPT fine-tuned as a wealth adviser.</li>
+                        <li>Generated 1.4k rows of Q&A pairs and fine-tuned a LLaMa 13B Model, achieving a 26% improvement over ChatGPT.</li>
+                        <li>Created the most popular finance dataset on HuggingFace with over 4K downloads.</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Software QA Automation Intern @ Legrand</h3>
+                    <p class="text-gray-400 mb-4">May 2023 - Aug 2023</p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li>Developed and executed comprehensive test plans and automated test cases.</li>
+                        <li>Learned C#, .NET, MSTest, Appium, and Docker; utilized Python and PyTest for automation.</li>
+                        <li>Increased automated testing by 38.9% in one project and implemented end-to-end testing with 93% code coverage in another.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="mb-24">
+            <h2 class="text-4xl font-bold mb-8">Education</h2>
+            <div class="bg-gray-800 p-8 rounded-lg">
+                <h3 class="text-2xl font-semibold mb-2">McMaster University</h3>
+                <p class="text-xl">Bachelor of Engineering, Software Engineering</p>
+                <p class="text-gray-400">GPA: 3.9/4.0 (11.3/12)</p>
+                <p class="text-gray-400">Graduation: Spring 2026</p>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-24">
+            <h2 class="text-4xl font-bold mb-8">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 p-8 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Acro-Ally</h3>
+                    <p class="text-gray-300 mb-4">Personal acronym dictionary application SaaS leveraging OpenAI for automatic acronym extraction.</p>
+                    <p class="text-sm text-gray-400 mb-4">Technologies: Go, OpenAI API, Stripe, SupaBase</p>
+                    <a href="#" class="text-yellow-400 hover:text-yellow-300 transition duration-300">View Project</a>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Tattoo Eraser</h3>
+                    <p class="text-gray-300 mb-4">Generative AI image processing application for removing tattoos from photographs and videos.</p>
+                    <p class="text-sm text-gray-400 mb-4">Technologies: Python, Gradio, ComfyUI, Google Cloud Platform</p>
+                    <a href="#" class="text-yellow-400 hover:text-yellow-300 transition duration-300">View Project</a>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4">StoryTime: Ebooks to Audiobook</h3>
+                    <p class="text-gray-300 mb-4">App that generates audiobooks from E-Books in the voice of Lex Fridman.</p>
+                    <p class="text-sm text-gray-400 mb-4">Technologies: Python, XTTS, RVC</p>
+                    <a href="#" class="text-yellow-400 hover:text-yellow-300 transition duration-300">View Project</a>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Aperture Explains AI</h3>
+                    <p class="text-gray-300 mb-4">AI-driven app for creating educational YouTube videos from research papers.</p>
+                    <p class="text-sm text-gray-400 mb-4">Technologies: Python, LangChain, Transformers, Tortoise-TTS, RVC</p>
+                    <a href="#" class="text-yellow-400 hover:text-yellow-300 transition duration-300">View Project</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-400 py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Yonge Bai. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yonge Bai's Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <header class="bg-gray-800 text-gray-100 p-6">
+        <nav class="container mx-auto">
+            <ul class="flex justify-end space-x-8">
+                <li><a href="index.html" class="hover:text-yellow-400 transition duration-300">Home</a></li>
+                <li><a href="#about" class="hover:text-yellow-400 transition duration-300">About</a></li>
+                <li><a href="blog.html" class="hover:text-yellow-400 transition duration-300">Blog</a></li>
+                <li><a href="#experience" class="hover:text-yellow-400 transition duration-300">Experience</a></li>
+                <li><a href="#projects" class="hover:text-yellow-400 transition duration-300">Projects</a></li>
+                <li><a href="YongeBai_Resume.pdf" class="hover:text-yellow-400 transition duration-300">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto mt-16 px-4">
+        <h1 class="text-6xl font-bold mb-12 text-yellow-400">Blog</h1>
+
+        <div id="search" class="mb-12">
+            <div class="flex">
+                <input type="text" placeholder="Search blog posts..." class="flex-grow px-4 py-3 bg-gray-700 border border-gray-600 rounded-l-md focus:outline-none focus:ring-2 focus:ring-yellow-400 text-gray-100">
+                <button type="button" class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-r-md hover:bg-yellow-300 transition duration-300">Search</button>
+            </div>
+        </div>
+
+        <section id="blog-posts" class="space-y-12">
+            <article class="bg-gray-800 rounded-lg p-8">
+                <h2 class="text-3xl font-semibold mb-4">Sushi Beauty vs Curry Beauty</h2>
+                <p class="text-gray-400 mb-4">Published on: <time datetime="2024-10-08">October 8, 2024</time></p>
+                <p class="text-gray-300 mb-6">Beauty is </p>
+                <a href="blogs/sushi-vs-curry.html" class="text-yellow-400 hover:text-yellow-300 transition duration-300">Read More</a>
+            </article>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-400 py-8 mt-16">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Yonge Bai. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
